@@ -633,6 +633,19 @@
       "groupName": "devcontainer"
     },
     {
+      "matchFileNames": [".devcontainer/Dockerfile"],
+      "matchManagers": ["dockerfile"], 
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["debian", "golang", "rust", "node", "python"],
+      "groupName": "devcontainer-docker"
+    },
+    {
+      "matchFileNames": [".devcontainer/Dockerfile"],
+      "matchManagers": ["custom.regex"], 
+      "matchDatasources": ["deb"],
+      "groupName": "devcontainer-deb"
+    },
+    {
       "matchFileNames": [".github/workflows/*.yaml"],
       "groupName": "githubactions"
     }

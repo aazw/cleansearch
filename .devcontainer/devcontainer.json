@@ -1,5 +1,5 @@
 {
-  "name": "vsc-base",
+  "name": "vsc-cleansearch",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -36,7 +36,7 @@
   },
   "runArgs": [
     "--name",
-    "vsc-base",
+    "vsc-cleansearch",
     "--add-host",
     "host.docker.internal:host-gateway"
   ]
